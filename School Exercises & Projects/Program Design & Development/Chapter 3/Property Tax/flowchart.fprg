@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kynan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-06-29 10:49:53 PM"/>
+        <attribute name="created" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTswNjoyMToyOSBQTTsyNDUy"/>
+        <attribute name="edited" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTsxMDo0OTo1MyBQTTsyOzI1NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="landVal" type="Real" array="False" size=""/>
+            <declare name="assessVal" type="Real" array="False" size=""/>
+            <assign variable="assessVal" expression="0.6"/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <assign variable="tax" expression="0.64"/>
+            <output expression="&quot;Enter the property value: &quot;" newline="True"/>
+            <input variable="landVal"/>
+            <output expression="&quot;The property tax is: $&quot; &amp; (((landVal * 0.01) * assessVal) * 0.64)" newline="True"/>
+            <assign variable="assessVal" expression="landVal * assessVal"/>
+            <output expression="&quot;Assessment Value: $&quot; &amp; assessVal" newline="True"/>
+            <output expression="&quot;Property Tax: $&quot; &amp; tax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,15 @@
+Module Main()
+  Declare Real landVal
+  Declare Real assessVal = 0.6
+  Declare Real tax = 0.64
+
+  Display "Enter the property value: "
+  Input landVal
+
+  Display "The property tax is: $" +
+  Display (((landVal * 0.01) * assessVal) * 0.64)
+
+  Display "Assessment Value: $" + assessVal
+
+  Display "Property Tax: $" + tax
+End Module

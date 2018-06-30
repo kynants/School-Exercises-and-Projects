@@ -1,0 +1,36 @@
+// This program adds up the monthly cost of expenses
+// and multiplies them by 12 to give you the total
+// annual cost.
+
+Module main()
+  Declare Real loanPayment
+  Declare Real insurance
+  Declare Real gas
+  Declare Real oil
+  Declare Real tires
+  Declare Real maintenance
+
+  Display "Enter the monthly cost for the following:"
+
+  Display "Loan Payment: "
+  Input loanPayment
+
+  Display "Insurance: "
+  Input insurance
+
+  Display "Gas"
+  Input gas
+
+  Display "Oil"
+  Input oil
+
+  Display "Tires"
+  Input tires
+
+  Display "Maintenance"
+  Input maintenance
+
+  Display "Your annual cost for everything is " +
+  Display (loanPayment + insurance + gas + oil +
+  Display tires + maintenance) * 12
+End Module

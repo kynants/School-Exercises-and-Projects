@@ -1,0 +1,13 @@
+// This program will ask how much your house costs, and recommend you save at least 80% of what it would cost to replace it.
+
+Module main()
+  Declare Real cost
+  Declare Real percentage = 0.8
+  
+  Display "Enter how much your house is worth: "
+  Input cost
+
+  Set cost *= percentage
+
+  Display "You should save $" + cost + " to replace your house."
+End Module

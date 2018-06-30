@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kynan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-06-29 06:12:02 PM"/>
+        <attribute name="created" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTswNTo0NzowNSBQTTsyNDUz"/>
+        <attribute name="edited" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTswNjoxMjowMiBQTTsxOzI1NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loanPayment" type="Real" array="False" size=""/>
+            <declare name="insurance" type="Real" array="False" size=""/>
+            <declare name="gas" type="Real" array="False" size=""/>
+            <declare name="oil" type="Real" array="False" size=""/>
+            <declare name="tires" type="Real" array="False" size=""/>
+            <declare name="maintenance" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the monthly cost for the following:&quot;" newline="True"/>
+            <output expression="&quot;Loan Payment: &quot;" newline="True"/>
+            <input variable="loanPayment"/>
+            <output expression="&quot;Insurance: &quot;" newline="True"/>
+            <input variable="insurance"/>
+            <output expression="&quot;Gas: &quot;" newline="True"/>
+            <input variable="gas"/>
+            <output expression="&quot;Oil: &quot;" newline="True"/>
+            <input variable="oil"/>
+            <output expression="&quot;Tires: &quot;" newline="True"/>
+            <input variable="tires"/>
+            <output expression="&quot;Maintenance: &quot;" newline="True"/>
+            <input variable="maintenance"/>
+            <output expression="&quot;Your annual cost for everything is $&quot; &amp; (loanPayment + insurance + gas + oil + tires + maintenance) * 12" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

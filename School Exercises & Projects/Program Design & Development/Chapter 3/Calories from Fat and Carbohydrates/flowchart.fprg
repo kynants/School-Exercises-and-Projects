@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kynan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-06-29 11:05:19 PM"/>
+        <attribute name="created" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTsxMDo1MjoxMyBQTTsyNDQ0"/>
+        <attribute name="edited" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNi0yOTsxMTowNToxOSBQTTsxOzI1NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="calFromFat" type="Real" array="False" size=""/>
+            <declare name="fatGrams" type="Real" array="False" size=""/>
+            <declare name="calFromCarbs" type="Real" array="False" size=""/>
+            <declare name="carbGrams" type="Real" array="False" size=""/>
+            <output expression="&quot;How many grams of fat do you consume/day?&quot;" newline="True"/>
+            <input variable="fatGrams"/>
+            <output expression="&quot;How many grams of carbs do you consume/day?&quot;" newline="True"/>
+            <input variable="carbGrams"/>
+            <assign variable="calFromFat" expression="fatGrams * 9"/>
+            <output expression="&quot;Calories from Fat: &quot; &amp; calFromFat" newline="True"/>
+            <assign variable="calFromCarbs" expression="carbGrams * 4"/>
+            <output expression="&quot;Calories from Carbs: &quot; &amp; calFromCarbs" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

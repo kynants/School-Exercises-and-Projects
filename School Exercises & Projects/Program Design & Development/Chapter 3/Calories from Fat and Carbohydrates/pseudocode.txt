@@ -1,0 +1,21 @@
+// Calories from Fat = Fat Grams * 9
+// Calories from Carbs = Carb Grams * 4
+
+Module Main()
+  Declare Real calFromFat
+  Declare Real fatGrams
+  Declare Real calFromCarbs
+  Declare Real carbGrams
+
+  Display "How many grams of fat do you consume/day? "
+  Input fatGrams
+
+  Display "How many grams of carbs do you consume/day? "
+  Input carbGrams
+
+  Set calFromFat = fatGrams * 9
+  Display "Calories from Fat: " + calFromFat
+
+  Set calFromCarbs = carbGrams * 4
+  Display "Calories from Carbs: " + calFromCarbs
+End Module
