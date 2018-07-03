@@ -1,7 +1,7 @@
-len1 = int(input("What is the rectangle 1's length? "))
-wid1 = int(input("What is the rectangle 1's width? "))
-len2 = int(input("What is the rectangle 2's length? "))
-wid2 = int(input("What is the rectangle 2's width? "))
+len1 = int(input("What is rectangle 1's length? "))
+wid1 = int(input("What is rectangle 1's width? "))
+len2 = int(input("What is rectangle 2's length? "))
+wid2 = int(input("What is rectangle 2's width? "))
 
 rect1 = len1 * wid1
 rect2 = len2 * wid2
