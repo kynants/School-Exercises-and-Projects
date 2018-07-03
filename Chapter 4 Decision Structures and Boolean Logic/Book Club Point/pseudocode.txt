@@ -1,0 +1,18 @@
+Declare Integer books
+Declare Integer points = [0, 5, 15, 30, 60]
+
+Display "How many books have you purchased this month? "
+Input books
+
+If books == 0 Then
+  Display "Number of points earned: " + points[0]
+Else If books == 1 Then
+  Display "Number of points earned: " + points[1]
+Else If books == 2 Then
+  Display "Number of points earned: " + points[2]
+Else If books == 3 Then
+  Display "Number of points earned: " + points[3]
+Else If books == 4 Then
+  Display "Number of points earned: " + points[4]
+Else
+  Display "Ask the front-desk."

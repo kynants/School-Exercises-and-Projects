@@ -1,0 +1,25 @@
+Declare Real len1
+Declare Real wid1
+Declare Real len2
+Declare Real wid2
+Declare Real rect1 = len1 * wid2,
+               rect2 = len2 * wid2
+
+Display "What is the rectangle 1's length?"
+Input len1
+
+Display "What is the rectangle 1's width?"
+Input wid1
+
+Display "What is the rectangle 2's length?"
+Input len2
+
+Display "What is the rectangle 2's width?"
+Input wid2
+
+If rect1 > rect2
+  Display "Rectangle 1 is bigger."
+Else If rect1 < rect2
+  Display "Rectangle 2 is bigger."
+Else
+  Display "They are the same."

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kynan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-07-01 03:26:59 PM"/>
+        <attribute name="created" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNy0wMTswMzowMDo1MiBQTTsyNDMz"/>
+        <attribute name="edited" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNy0wMTswMzoyNjo1OSBQTTsxOzI1NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="len1" type="Real" array="False" size=""/>
+            <declare name="wid1" type="Real" array="False" size=""/>
+            <declare name="len2" type="Real" array="False" size=""/>
+            <declare name="wid2" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the rectangle 1's length?&quot;" newline="True"/>
+            <input variable="len1"/>
+            <output expression="&quot;What is the rectangle 1's width?&quot;" newline="True"/>
+            <input variable="wid1"/>
+            <output expression="&quot;What is the rectangle 2's length?&quot;" newline="True"/>
+            <input variable="len2"/>
+            <output expression="&quot;What is the rectangle 2's width?&quot;" newline="True"/>
+            <input variable="wid2"/>
+            <declare name="rect1" type="Real" array="False" size=""/>
+            <assign variable="rect1" expression="len1 * wid1"/>
+            <declare name="rect2" type="Real" array="False" size=""/>
+            <assign variable="rect2" expression="len2 * wid2"/>
+            <if expression="rect1 &gt; rect2">
+                <then>
+                    <output expression="&quot;Rectangle 1 is bigger.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="rect1 &lt; rect2">
+                        <then>
+                            <output expression="&quot;Rectangle 2 is bigger.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;They are the same.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,14 @@
+Constant Integer SIZE = 7
+Declare Integer day[SIZE] = ["Sunday",
+                       "Monday",
+                       "Tuesday",
+                       "Wednesday",
+                       "Thursday",
+                       "Friday",
+                       "Saturday"]
+
+Declare Integer bugs
+
+For Each bugs in day
+  Display "How many bugs were caught on " + day
+End For

@@ -1,0 +1,37 @@
+Declare Integer romNum
+
+Display "Enter a number between 1-10: "
+
+Select romNum
+  Case 1:
+    Display: "I"
+
+  Case 2:
+    Display: "II"
+
+  Case 3:
+    Display: "III"
+
+  Case 4:
+    Display: "IV"
+
+  Case 5:
+    Display: "V"
+
+  Case 6:
+    Display: "VI"
+
+  Case 7:
+    Display: "VII"
+
+  Case 8:
+    Display: "VIII"
+
+  Case 9:
+    Display: "IX"
+
+  Case 10:
+    Display: "X"
+
+  Default:
+    Display: "Error. Invalid Number."

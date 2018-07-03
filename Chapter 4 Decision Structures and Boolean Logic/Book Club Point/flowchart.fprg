@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kynan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-07-02 02:59:35 PM"/>
+        <attribute name="created" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNy0wMjswMjozNDoxOCBQTTsyNDQy"/>
+        <attribute name="edited" value="S3luYW47Q1IzNDA5NDUtQUs7MjAxOC0wNy0wMjswMjo1OTozNSBQTTsxOzI1NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="books" type="Integer" array="False" size=""/>
+            <declare name="points" type="Integer" array="True" size="5"/>
+            <assign variable="points[0]" expression="0"/>
+            <assign variable="points[1]" expression="5"/>
+            <assign variable="points[2]" expression="15"/>
+            <assign variable="points[3]" expression="30"/>
+            <assign variable="points[4]" expression="60"/>
+            <output expression="&quot;How many books have you purchased this month? &quot;" newline="True"/>
+            <input variable="books"/>
+            <if expression="books == 0">
+                <then>
+                    <output expression="&quot;Number of points earned: &quot; &amp; points[0]" newline="True"/>
+                </then>
+                <else>
+                    <if expression="books == 1">
+                        <then>
+                            <output expression="&quot;Number of points earned: &quot; &amp; points[1]" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="books == 2">
+                                <then>
+                                    <output expression="&quot;Number of points earned: &quot; &amp; points[2]" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="books == 3">
+                                        <then>
+                                            <output expression="&quot;Number of points earned: &quot; &amp; points[3]" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="books == 4">
+                                                <then>
+                                                    <output expression="&quot;Number of points earned: &quot; &amp; points[4]" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Ask the front-desk.&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
