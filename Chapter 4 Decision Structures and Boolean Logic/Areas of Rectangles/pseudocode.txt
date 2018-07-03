@@ -5,16 +5,16 @@ Declare Real wid2
 Declare Real rect1 = len1 * wid2,
                rect2 = len2 * wid2
 
-Display "What is the rectangle 1's length?"
+Display "What is rectangle 1's length?"
 Input len1
 
-Display "What is the rectangle 1's width?"
+Display "What is rectangle 1's width?"
 Input wid1
 
-Display "What is the rectangle 2's length?"
+Display "What is rectangle 2's length?"
 Input len2
 
-Display "What is the rectangle 2's width?"
+Display "What is rectangle 2's width?"
 Input wid2
 
 If rect1 > rect2
