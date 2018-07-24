@@ -1,0 +1,27 @@
+// VARIABLES
+Declare Real payRate
+Declare Integer hrsWork
+
+// PAY RATE PROMPT
+Display "Enter your hourly pay rate: "
+Input payRate
+
+// PAY RATE VALIDATION
+While payRate < 7.5 AND > 18.25
+	Display "Error. Please enter a valid wage: "
+	Input payRate
+End While
+
+// HOURS WORKED PROMPT
+Display "How many hours did you work? "
+Input hrsWork
+
+// HOURS WORKED VALIDATION
+While hrsWork < 0 AND > 40
+	Display "Error. Number of hours worked must be from 0 to 40."
+	Display "Please enter a valid number ofhours worked: "
+	Input hrsWork
+End While
+
+// THE PROGRAM FINALLY DISPLAYS THE DAY'S WAGE
+Display payRate * hrsWork
