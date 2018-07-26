@@ -1,0 +1,48 @@
+// VARIABLES
+// Ticket Prices
+Declare Integer ticket_a_price = 20
+				ticket_b_price = 15
+				ticket_c_price = 10
+
+// Amount of Seats
+Declare Integer ticket_a = 300
+				ticket_b = 500
+				ticket_c = 200
+
+
+// PROMPTS AND VALIDATIONS
+// Prompt A
+Display "How many tickets were sold for A seats? "
+Input ticket_a
+
+// Validation A
+While ticket_a > 300 OR < 0
+	Display "Error: There cannot be more than 300 seats sold."
+	Display "Enter a valid number of tickets sold: "
+End While
+
+// Prompt B
+Display "How many tickets were sold for B seats? "
+Input ticket_b
+
+// Validation B
+While ticket_a > 500 OR < 0
+	Display "Error: There cannot be more than 500 seats sold."
+	Display "Enter a valid number of tickets sold: "
+End While
+
+// Prompt C
+Display "How many tickets were sold for C seats? "
+Input ticket_c
+
+// Validation C
+While ticket_a > 200 OR < 0
+	Display "Error: There cannot be more than 200 seats sold."
+	Display "Enter a valid number of tickets sold: "
+End While
+
+
+// TOTAL REVENUE
+Display "The amount of income generated from ticket sales: " + 
+Display (ticket_a * ticket_a_price) + (ticket_b * ticket_b_price) + 
+Display (ticket_c * ticket_c_price)
