@@ -5,9 +5,9 @@ Declare Integer ticket_a_price = 20
 				ticket_c_price = 10
 
 // Amount of Seats
-Declare Integer ticket_a = 300
-				ticket_b = 500
-				ticket_c = 200
+Declare Integer ticket_a
+				ticket_b
+				ticket_c
 
 
 // PROMPTS AND VALIDATIONS
